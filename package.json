@@ -4,7 +4,7 @@
     "description": "",
     "main": "src/app.js",
     "scripts": {
-        "build-bundle": "vue-cli-service build --target lib --name vue-nesbox-emulator ./src/index.js",
+        "build-bundle": "vue build --target lib --name vue-nesbox-emulator ./src/index.js",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
