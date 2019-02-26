@@ -1,8 +1,8 @@
 {
-    "name": "games",
+    "name": "vue-nesbox-emulator",
     "version": "1.0.0",
     "description": "",
-    "main": "src/app.js",
+    "main": "./dist/vue-nesbox-emulator.common.js",
     "scripts": {
         "build-bundle": "vue build --target lib --name vue-nesbox-emulator ./src/index.js",
         "dev": "npm run development",
@@ -27,5 +27,6 @@
         "vue-template-compiler": "^2.6.7"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    
 }
