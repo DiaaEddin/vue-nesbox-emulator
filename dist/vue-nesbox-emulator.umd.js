@@ -1606,12 +1606,12 @@ if (typeof window !== 'undefined') {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"b5c12f96-vue-loader-template"}!C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/GamePlayer.vue?vue&type=template&id=29f0953c&
+// CONCATENATED MODULE: C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"b5c12f96-vue-loader-template"}!C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/GamePlayer.vue?vue&type=template&id=45592dac&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"display":"block","text-align":"center"}},[_c('div',{attrs:{"id":_vm.id}},[_c('p',[_vm._v("To play this game, please, download the latest Flash player!")]),_c('br'),_vm._m(0)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{attrs:{"href":"http://www.adobe.com/go/getflashplayer"}},[_c('img',{attrs:{"src":"//www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png","alt":"Get Adobe Flash player"}})])}]
 
 
-// CONCATENATED MODULE: ./src/GamePlayer.vue?vue&type=template&id=29f0953c&
+// CONCATENATED MODULE: ./src/GamePlayer.vue?vue&type=template&id=45592dac&
 
 // EXTERNAL MODULE: C:/Users/Lenovo/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js
 var get_own_property_descriptor = __webpack_require__("4640");
@@ -2016,7 +2016,7 @@ function (_Vue) {
   }, {
     key: "urlChanged",
     value: function urlChanged() {
-      this.embed(200, 200);
+      this.embed(600, 448);
     }
   }, {
     key: "created",
@@ -2025,13 +2025,11 @@ function (_Vue) {
 
       this.id = this.guidGenerator();
 
-      if (window.resizeOwnEmulator == null) {
-        window.resizeOwnEmulator = function (width, height) {
-          var el = document.getElementById(_this2.id);
-          el.style.width = width;
-          el.style.height = height;
-        };
-      }
+      window.resizeOwnEmulator = function (width, height) {
+        var el = document.getElementById(_this2.id);
+        el.style.width = width;
+        el.style.height = height;
+      };
     }
   }, {
     key: "mounted",

@@ -2,7 +2,7 @@
     <div>
         <h1>Test</h1>
         <div style="width:200px;height:56px;background-color:black" @click="doit"></div>
-        <game-player :url="gameUrl"></game-player>
+        <game-player url="/my.SMD"></game-player>
     </div>
 </template>
 

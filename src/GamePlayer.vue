@@ -59,18 +59,16 @@ export default class Home extends Vue {
 
     @Watch("url")
     urlChanged() {
-        this.embed(200, 200);
+        this.embed(600, 448);
     }
 
     created() {
         this.id = this.guidGenerator();
-        if (window.resizeOwnEmulator == null) {
-            window.resizeOwnEmulator = (width, height) => {
-                let el = document.getElementById(this.id);
-                el.style.width = width;
-                el.style.height = height;
-            };
-        }
+        window.resizeOwnEmulator = (width, height) => {
+            let el = document.getElementById(this.id);
+            el.style.width = width;
+            el.style.height = height;
+        };
     }
 
     mounted() {

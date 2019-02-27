@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
 mix.setPublicPath("public");
 
@@ -13,7 +13,7 @@ mix.setPublicPath("public");
  |
  */
 
-mix.js('src/app.js', "scripts/app.js");
+mix.js("src/app.js", "scripts/app.js");
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
@@ -51,12 +51,10 @@ mix.js('src/app.js', "scripts/app.js");
 //   postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 // });
 
-
 if (!mix.inProduction()) {
     //sync the browser to localhost:3000 on development mode
     mix.browserSync({ proxy: "localhost:9000", port: 4000 });
-  } else {
+} else {
     //version the files in production
     mix.version();
-  }
-  
+}
